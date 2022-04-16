@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Das Restro & Cafe</title>
+
+    <link rel="stylesheet" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+        .bgg{
+            background-image: url(images/jason-leung-poI7DelFiVA-unsplash.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: -1;
+
+        }
+      body {
+        color: white;
+        font-family: "Balsamiq Sans", cursive;
+      }
+      .left {
+        /* border: 2px red solid; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+      }
+      .left img {
+        filter: invert(100%);
+        width: 40px;
+      }
+      .left div {
+        line-height: 19px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .left div a{
+        text-decoration: none;
+        color: white
+    }
+      .left:hover {
+        cursor: pointer;
+      }
+      .left div.img{
+          text-align: center;
+      }
+      .mid {
+        /* border: 2px yellow solid; */
+        display: block;
+        width: 39%;
+        margin: 20px auto;
+        /* display: inline-block; */
+      }
+      .right {
+        /* border: 2px green solid; */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 12px;
+      }
+      .navbar {
+        display: inline-block;
+      }
+      .navbar li {
+        display: inline-block;
+      }
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 22px;
+      }
+      .navbar li a:hover {
+        color: bisque;
+      }
+      .btn {
+        color: white;
+        margin: 0px 10px;
+        padding: 2px 10px;
+        border: 2px solid black;
+        border-radius: 10px;
+        cursor: pointer;
+        background: none;
+        font-family: "Balsamiq Sans", cursive;
+        font-size: 16px;
+      }
+      .btn:hover {
+        background-color: rgb(31, 20, 4);
+      }
+      .container {
+        border: 2px white solid;
+        border-radius: 10px;
+        width: 33%;
+        margin: 50px 470px;
+        padding: 32px 32px;
+        left: 18px;
+        /* backdrop-filter: blur(1px); */
+      }
+      .form-group input{
+          display: block;
+          width: 395px;
+          text-align: center;
+          margin:4px auto;
+          padding: 2px 2px;
+          border-radius: 7px;
+          font-size: 17px;
+          font-family: "Balsamiq Sans", cursive;
+
+      }
+      .container h1{
+          text-align: center;
+          backdrop-filter: blur(3px);
+      }
+      .container button{
+          display: block;
+          width: 23%;
+          margin: auto;
+          text-align: center;
+          backdrop-filter: blur(100px);
+      }
+      .header{
+        backdrop-filter: blur(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgg">
+        
+    </div>
+    <header class="header">
+        <!-- Left box for logo -->
+      <div class="left">
+          <div class="image"><img src="images/logo.png" alt="logo" /></div>
+        <div><a href="index.html">Das Restro & Cafe</a></div>
+      </div>
+
+      <!-- Mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home </a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right box for buttons -->
+      <div class="right">
+        <button class="btn">Book a Table</button>
+        <button class="btn">Call Us Now</button>
+      </div>
+    </header>
+
+    <div class="container">
+        <h1>Book a Table Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+                <input type="number" name="" placeholder="Enter No. of Guest">
+                <input type="email" name="" placeholder="Enter your Email Address">
+                <input type="tel" name="" placeholder="Enter your Mobile No.">
+                <input type="text" name="" placeholder="Enter your preferred Meal">
+                <input type="date" name="" placeholder="Select Date">
+                <input type="time" name="" placeholder="Select your preferred time">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+  </body>
+</html>
